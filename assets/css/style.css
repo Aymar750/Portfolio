@@ -1,13 +1,13 @@
-/*=============== GOOGLE FONTS ===============*/
+/* GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-/*=============== VARIABLES CSS ===============*/
+/* VARIABLES CSS */
 :root {
-    /*===== Colors =====*/
+    /* Colors */
     --hue-color:242;
 
     /* HSL Color Mode */
-    --skin-color: hsl(342, 92%, 46%);
+    --skin-color: hsl(219, 93%, 54%);
     --title-color: hsl(var(--hue-color), 8%, 95%);
     --text-color: hsl(var(--hue-color), 8%, 85%);
     --body-color: hsl(var(--hue-color), 19%, 5%);
@@ -15,7 +15,7 @@
     --scroll-bar-color: hsl(var(--hue-color), 12%, 38%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 26%);
 
-    /*===== Font and Typography =====*/
+    /* Font and Typography */
     --body-font: 'Poppins', sans-serif;
 
     /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
@@ -27,11 +27,11 @@
     --small-font-size: .875rem;
     --smaller-font-size: .813rem;
 
-    /*===== Font Weight =====*/
+    /* Font Weight */
     --font-medium: 500;
     --font-bold: 600;
 
-    /*===== Margenes Bottom =====*/
+    /* Margines Bottom */
     --mb-0-25: .25rem;
     --mb-0-5: .5rem;
     --mb-0-75: .75rem;
@@ -41,7 +41,7 @@
     --mb-2-5: 2.5rem;
     --mb-3: 3rem;
 
-    /*===== Z Index =====*/
+    /* Z Index */
     --z-fixed: 10;
     --z-modal: 100;
 }
@@ -59,40 +59,40 @@
     }
 }
 
-/*=============== BASE ===============*/
+/* BASE */
 
 
-/*=============== LAYOUT ===============*/
+/* LAYOUT */
 
 
-/*=============== REUSABLE CSS CLASSES ===============*/
+/* REUSABLE CSS CLASSES */
 
 
-/*=============== SIDEBAR ===============*/
+/* SIDEBAR */
 
 
 /* Active Link */
 
 
-/*=============== MAIN ===============*/
+/* MAIN */
 
 
-/*===== Home Section =====*/
+/*Home Section*/
 
 
-/*===== Buttons =====*/
+/* Buttons */
 
 
-/*===== About Section =====*/
+/* About Section */
 
 
-/*===== Qualification Section =====*/
+/* Qualification Section */
 
 
-/*===== Skills Section =====*/
+/* Skills Section */
 
 
-/*===== Work Section =====*/
+/* Work Section */
 
 
 /* Active Item Work */
@@ -107,28 +107,28 @@
 /* Active Modal*/
 
 
-/*===== Testimonial Section =====*/
+/* Testimonial Section */
 
 
 /* Swiper Class */
 
 
-/*===== Contact Section =====*/
+/*Contact Section */
 
 
-/*=============== FOOTER ===============*/
+/* FOOTER */
 
 
-/*=============== SCROLL UP ===============*/
+/* SCROLL UP */
 
 
 /* Show Scroll Up*/
 
 
-/*=============== SCROLL BAR ===============*/
+/*SCROLL BAR */
 
 
-/*========== BREAKPOINTS ==========*/
+/* RESPONSIVES */
 /* For Large Devices */
 @media screen and (max-width: 1408px) {}
 
