@@ -19,13 +19,13 @@
     --body-font: 'Poppins', sans-serif;
 
     /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
-    --biggest-font-size: 3rem;
-    --h1-font-size: 2.25rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
-    --normal-font-size: 1rem;
-    --small-font-size: .875rem;
-    --smaller-font-size: .813rem;
+    --biggest-font-size: 3.5rem;
+    --h1-font-size: 2.5rem;
+    --h2-font-size: 1.75rem;
+    --h3-font-size: 1.5rem;
+    --normal-font-size: 1.05rem;
+    --small-font-size: 1rem;
+    --smaller-font-size: .850rem;
 
     /* Font Weight */
     --font-medium: 500;
@@ -101,10 +101,33 @@ button, input{
 }
 
 /* LAYOUT */
-
+.container {
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.grid{
+  display: grid;  
+}
 
 /* REUSABLE CSS CLASSES */
+.section{
+    padding: 6.5rem 0 2rem;
+}
 
+.section_title {
+    text-align: center;
+    font-size: var(--h1-font-size);
+    margin-bottom: var(--mb-3);
+}
+
+.section_title::before{
+    content: attr(data-heading);
+    display: block;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    color: var(--skin-color);
+}
 
 /* SIDEBAR */
 .sidebar {
@@ -198,13 +221,191 @@ button, input{
 }
 
 /*Home Section*/
+.home{
+    /* background: url(../img/tof.png); */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.home_container {
+    position: relative;
+    height: 100%;
+    align-items: center;
+}
 
+.home_social {
+    position: absolute;
+    top: 1.8rem;
+    left: 0;
+    display: flex;
+    align-items: flex;
+    column-gap: 3.5rem;
+}
+
+.home_social-follow {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    color: var(--text-color);
+}
+
+.home_social-follow::after{
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 2px;
+    background-color: var(--text-color);
+    right: 25%;
+    top: 50%;
+}
+
+.home_social-links{
+    display: inline-flex;
+    column-gap: 1rem;
+}
+
+.home_social_link {
+    font-size: 1.08rem;
+    color: var(--text-color);
+    transition: .4s;
+}
+
+.home_social_link:hover {
+    transform: translateY(.25em);
+}
+
+.home_img {
+    display: none;
+}
+
+.home_title {
+    font-size: var(--biggest-font-size);
+}
+
+.home_subtitle {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-0-75);
+}
+
+.home_description {
+    max-width: 450px;
+    margin-bottom: var(--mb-2);
+}
+.my_info {
+    display: flex;
+    column-gap: 1.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 1.8rem;
+}
+
+.info_item {
+    display: flex;
+    align-items: center;
+}
+
+.info_title,.info_subtitle {
+    font-size: var(--small-font-size);
+}
+
+.info_title {
+    font-weight: var(--font-medium);
+}
+
+.info_icon {
+    font-size: 1.8rem;
+    color: var(--skin-color);
+    margin-right: var(--mb-0-75);
+}
 
 /* Buttons */
+.button {
+    display: inline-flex;
+    align-items: center;
+    column-gap: .5rem;
+    background-color: var(--skin-color);
+    color: var(--title-color);
+    padding: .75rem 1.4rem;
+    border-radius: .25rem;
+    font-weight: var(--font-medium);
+    position: relative;
+    z-index: 1;
+    transition: .4s;
+}
 
+.button::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--box-color);
+    z-index: -1;
+    transform-origin: center;
+    transform: scale(0);
+    border-radius: .25rem;
+    transition: .2s;
+}
+
+.button:hover::after{
+    transform: scale(1);
+}
+
+.button_icon {
+    font-size: 1.25rem;
+}
 
 /* About Section */
+.about_container {
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 4rem;
+    align-items: center;
+}
 
+.about_img {
+    width: 380px;
+    border-radius: 0.75rem;
+    justify-self: center;
+}
+
+.about_heading {
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-75);
+}
+
+.about_description {
+    text-align: center;
+    padding-right: 6rem;
+    margin-bottom: var(--mb-2);
+}
+
+.about_info{
+    grid-template-columns: repeat(3, 140px);
+    column-gap: 1.25rem;
+    margin-bottom: var(--mb-3);
+}
+
+.about_box {
+    text-align: center;
+    border-radius: .25rem;
+    padding: 1rem 1.25rem;
+    background-color: var(--box-color);
+}
+
+.about_icon {
+    font-size: 1.5rem;
+    color: var(--skin-color);
+    margin-bottom: var(--mb-0-75);
+}
+
+.about_title {
+    font-size: var(--small-font-size);
+}
+
+.about_subtitle {
+    font-size: var(--smaller-font-size);
+}
 
 /* Qualification Section */
 
