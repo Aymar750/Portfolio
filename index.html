@@ -131,7 +131,7 @@
                         <div class="about_box">
                             <i class="uil uil-award about_icon"></i>
                             <h3 class="about_title">Experiences</h3>
-                            <span class="about_subtitle">+1 Ans</span>
+                            <span class="about_subtitle">+ 12mois</span>
                         </div>
                         <div class="about_box">
                             <i class="uil uil-suitcase-alt about_icon"></i>
@@ -410,15 +410,15 @@
         <section class="work section" id="work">
             <h2 data-heading="Mon portfolio" class="section_title">Mes Travaux récents</h2>
 
-            <div class="work_filters">
-                <span class="work_item active-work">Tout</span>
-                <span class="work_item">Web</span>
-                <span class="work_item">Mobile</span>
-                <span class="work_item">Design</span>
+            <div class="work_filters ">
+                <span class="work_item active-work" data-filter="all">Tout</span>
+                <span class="work_item" data-filter=".web">Web</span>
+                <span class="work_item" data-filter=".app">Mobile</span>
+                <span class="work_item" data-filter=".design">Design</span>
             </div>
 
             <div class="work_container container grid">
-                <div class="work_card">
+                <div class="work_card mix web">
                     <img src="assets/img/can bl.jpg" alt="" class="work_img">
                     <h3 class="work_title">Portfolio</h3>
                     <span class="work_button">Demo
@@ -437,7 +437,7 @@
                     </div>
                 </div>
 
-                <div class="work_card">
+                <div class="work_card mix app">
                     <img src="assets/img/can bl.jpg" alt="" class="work_img">
                     <h3 class="work_title">Portfolio</h3>
                     <span class="work_button">Demo
@@ -456,7 +456,7 @@
                     </div>
                 </div>
 
-                <div class="work_card">
+                <div class="work_card mix design">
                     <img src="assets/img/can bl.jpg" alt="" class="work_img">
                     <h3 class="work_title">Portfolio</h3>
                     <span class="work_button">Demo
@@ -475,7 +475,7 @@
                     </div>
                 </div>
 
-                <div class="work_card">
+                <div class="work_card mix web">
                     <img src="assets/img/can bl.jpg" alt="" class="work_img">
                     <h3 class="work_title">Portfolio</h3>
                     <span class="work_button">Demo
@@ -494,7 +494,7 @@
                     </div>
                 </div>
 
-                <div class="work_card">
+                <div class="work_card mix app ">
                     <img src="assets/img/can bl.jpg" alt="" class="work_img">
                     <h3 class="work_title">Portfolio</h3>
                     <span class="work_button">Demo
@@ -513,7 +513,7 @@
                     </div>
                 </div>
 
-                <div class="work_card">
+                <div class="work_card mix web">
                     <img src="assets/img/can bl.jpg" alt="" class="work_img">
                     <h3 class="work_title">Portfolio</h3>
                     <span class="work_button">Demo
@@ -522,7 +522,7 @@
 
                     <div class="portfolio_item-details">
                         <h3 class="details_title">Portfolio Yann</h3>
-                        <p class="details_description">finis le design tu vas mettre le texte after</p>
+                        <p class="details_description">finis le design tu vas mettre le texte after pppp</p>
                         <ul class="details_info">
                             <li>Crée le - <span>05/03/2023</span></li>
                             <li>Technologies - <span>html css js</span></li>
@@ -535,7 +535,30 @@
         </section>
         
         <!-- Portfolio Popup -->
-        
+         <div class="portfolio_popup">
+            <div class="portfolio_popup-inner">
+                <div class="portfolio_popup-content grid">
+                    <span class="portfolio_popup-close"><i class="uil uil-times"></i></span>
+                    <div class="pp_thumbnail">
+                        <img src="assets/img/can bl.jpg" alt="" class="portfolio_popup-img">
+                    </div>
+
+                    <div class="portfolio_popup-info">
+                        <div class="portfolio_popup-subtitle">Theme - <span>Web</span></div>
+                        <div class="portfolio_popup-body">
+                            <h3 class="details_title">Portfolio Yann</h3>
+                            <p class="details_description">finis le design tu vas mettre le texte after</p>
+                            <ul class="details_info">
+                                <li>Crée le - <span>05/03/2023</span></li>
+                                <li>Technologies - <span>html css js</span></li>
+                                <li>Partie - <span>Frontend</span></li>
+                                <li>Code Source - <span><a href="#">www.github.com/Aymar750</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
         <!-- Services -->
         
         <!-- Contact -->
@@ -547,7 +570,7 @@
     <!-- SCROLL UP BTN -->
     
 
-    <!-- MIXITUP FILTER (pour rajouter des filtres pour le style haha)-->
+    <!-- MIXITUP FILTER (pour faciliter les filtres  haha)-->
     <script src="assets/js/mixitup.min.js"></script>
 
     <!-- SWIPER JS  (pour me faciliter lors de mes animations)-->
