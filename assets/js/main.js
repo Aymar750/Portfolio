@@ -84,11 +84,28 @@ function portfolioDetails(portfolioItem) {
 
 
 }
-
-
 /* SERVICES MODAL */
+const modalviews = document.querySelectorAll('.services_modal');
+const modalBtns = document.querySelectorAll('.services_button');
+const modalCloses = document.querySelectorAll('.services_modal-close');
 
+let modal = function(modalClick) {
+    modalviews[modalClick].classList.add('active-modal');
+}
 
+modalBtns.forEach((modalBtn,i) => {
+    modalBtn.addEventListener('click',()=> {
+        modal(i);
+    });
+});
+
+modalCloses.forEach((modalClose) => {
+    modalClose.addEventListener('click',()=> {
+        modalviews.forEach((modalView) => {
+            modalView.classList.remove('active-modal');
+        });
+    });
+});
 /* SWIPER TESTIMONIAL */
 
 
